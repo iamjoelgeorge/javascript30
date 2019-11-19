@@ -1,0 +1,47 @@
+body {
+    background: #6DA9E5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 4px rgb(17, 16, 16);
+    font: {
+        family: "roboto";
+        size: 2vh;
+    }
+    .clock-face {
+        position: relative;
+        border: 3px solid white;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        box-shadow: 0 0 3px rgb(255, 255, 255);
+        .clock-handle {
+            width: 70px;
+            height: 5px;
+            background: white;
+            position: relative;
+            top: 49%;
+            left: 25px;
+            box-shadow: 0 0 1.5px rgb(255, 255, 255);
+            border-radius: 1px;
+            transition: 0.1s cubic-bezier(0, 1.6, 0.46, 2.66);
+            transform: rotate(90deg);
+            transform-origin: 100%;
+        }
+        .hour-hand {
+            width: 55px;
+            top: 50%;
+            left: 40px;
+        }
+        .min-hand {
+            top: 48%;
+        }
+        .sec-hand {
+            height: 3px;
+            top: 46%;
+        }
+    }
+}
