@@ -1,6 +1,6 @@
 let inputs = document.querySelectorAll(".controls input");
 
-funciton handleUpdate() {
+function handleUpdate() {
     console.log(this.value);
 }
 
