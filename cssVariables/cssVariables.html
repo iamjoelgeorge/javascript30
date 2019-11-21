@@ -5,11 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="cssVariables.css">
     <title>CSS Variables</title>
 </head>
 
 <body>
+    <div id="small-container">
+        <h1>Update CSS Variable with <span class="highlight">JS</span></h1>
+        <section id="controls">
+            <label for="spacing">Spacing:</label>
+            <input name="spacing" type="range" min="10" max="200" value="40" data-sizing="px">
 
+            <label for="blur">Blur</label>
+            <input name="blur" min="10" max="25" data-sizing="px" value="15" type="range">
+
+            <label for="base">Base Color</label>
+            <input name="base" type="color" value="#ffc600">
+        </section>
+    </div>
+    <div id="image">
+        <img src="https://picsum.photos/300/300" alt="">
+    </div>
+
+    <script src="./cssVariables.js"></script>
 </body>
 
 </html>

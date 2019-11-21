@@ -1,0 +1,53 @@
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body {
+    background: rgb(31, 32, 32);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#controls {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+#controls label {
+    margin: 0 20px;
+}
+
+#image {
+    max-width: 400px;
+    height: auto;
+}
+
+#image img {
+    width: auto;
+    height: auto;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur))
+}
+
+.highlight {
+    color: var(--base);
+}
