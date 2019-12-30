@@ -45,7 +45,7 @@ body {
     height: auto;
     padding: var(--spacing);
     background: var(--base);
-    filter: blur(var(--blur))
+    filter: blur(var(--blur));
 }
 
 .highlight {
