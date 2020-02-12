@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Array Methods</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        const inventors = [{
-            first: 'Mark',
-            last: 'Dave',
-            year: 1598,
-            passed: 2020
-        }, {
-            first: 'Albert',
-            last: 'Einstein',
-            year: 1442,
-            passed: 1999
-        }, {
-            first: 'Isaac',
-            last: 'Newton',
-            year: 1822,
-            passed: 1922
-        }, {
-            first: 'Gocu',
-            last: 'Titan',
-            year: 1892,
-            passed: 1942
-        }];
+      const inventors = [
+        {
+          first: "Mark",
+          last: "Dave",
+          year: 1598,
+          passed: 1622
+        },
+        {
+          first: "Albert",
+          last: "Einstein",
+          year: 1442,
+          passed: 1522
+        },
+        {
+          first: "Isaac",
+          last: "Newton",
+          year: 1822,
+          passed: 1922
+        },
+        {
+          first: "Gocu",
+          last: "Titan",
+          year: 1892,
+          passed: 1942
+        }
+      ];
 
-        const people = ['Ben, Johnson', 'Ivan, David', 'Joel, George', 'Brian, Stock', 'Lilly, Thomas', 'Jane, Savio'];
+      const people = [
+        "Ben, Johnson",
+        "Ivan, David",
+        "Joel, George",
+        "Brian, Stock",
+        "Lilly, Thomas",
+        "Jane, Savio"
+      ];
 
-        const fifteen = inventors.filter((inventor) => {
-            if (inventor.year >= 1500) {
-                return true;
-            }
-        });
-        console.table(fifteen);
+      //filter method - find all the inventors who lived between 1500 and 1900
+      //   const fifteen = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1900);
+      //   console.table(fifteen);
 
-        const fullName = inventors.map((inventor) => `${inventor.first} ${inventor.last}`);
-        console.table(fullName);
+      //map method - return the full names of the inventors
+      // const fullName = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+      // console.table(fullName);
 
+      //sort method - Order the inventors according to their birth years
+      //   const ordered = inventors.sort((a, b) => (a.year > b.year ? 1 : -1));
+      //   console.table(ordered);
 
-        const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1)
-        console.table(ordered);
-        
+      //reduce method - How many years did all the inventors live?
+      //   const totalYears = inventors.reduce((total, inventor) => {
+      //     return total + (inventor.passed - inventor.year);
+      //   }, 0);
+      //   console.log(totalYears);
+
+      //Sort the inventors by years lived
+      // const oldest = inventors.sort((a, b) =>{
+      //   const previousPerson = a.passed - a.year;
+      //   const nextPerson = b.passed - b.year;
+      //   return nextPerson - previousPerson;
+      // })
+      // console.table(oldest);
+
+      // Sort the people alphabetically by last name
+      // const alpha = people.sort((lastOne, nextOne) => {
+      //   const [aLast, aFirst] = lastOne.split(", ");
+      //   const [bLast, bFirst] = nextOne.split(", ");
+      //   return aLast > bLast ? 1 : -1;
+      // });
+      // console.table(alpha);
+
+      // Reduce Exercise
+      // Sup up the instances of each of these
+      const data = ["car", "car", "truck", "truck", "cat", "dog", "dog"];
+      
     </script>
-</body>
-
+  </body>
 </html>
