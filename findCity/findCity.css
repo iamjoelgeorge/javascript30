@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: roboto;
+}
+
+body {
+  height: 100vh;
+  height: 100%;
+  background: #544657;
+}
+
+main {
+  width: 400px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+main span#number-of-cities {
+  margin-right: 25px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: white;
+}
+
+main input {
+  padding: 20px 17px;
+  font-size: 2em;
+  border: 10px solid #d9d0db;
+  border-radius: 3px;
+}
+
+main ul.list-of-cities {
+  width: 350px;
+  margin-top: 5px;
+  max-height: 400px;
+  overflow: scroll;
+}
+
+main ul.list-of-cities li.city {
+  list-style-type: none;
+  background: white;
+  padding: 10px 15px;
+  width: 100%;
+  margin-bottom: 3px;
+  -webkit-box-shadow: 2px 3px 5px grey;
+          box-shadow: 2px 3px 5px grey;
+  -webkit-transform: skewX(-4deg);
+          transform: skewX(-4deg);
+  min-height: 40px;
+}
+
+main ul.list-of-cities li.city:nth-child(odd) {
+  -webkit-transform: skewX(4deg);
+          transform: skewX(4deg);
+}
+/*# sourceMappingURL=findCity.css.map */
